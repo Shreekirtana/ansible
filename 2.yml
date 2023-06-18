@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+   - name: install_multiple_packages
+     apt:
+       name: ['wget', 'git', 'maven']
+       state: latest
+     
